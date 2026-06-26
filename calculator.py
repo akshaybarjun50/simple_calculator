@@ -9,7 +9,7 @@ while True:
     print("\033[34m[2]\033[0m Subtraction (-)")
     print("\033[34m[3]\033[0m Multiplication (*)")
     print("\033[34m[4]\033[0m Division (/)")
-    print("\033[34m[5]\033[0m Mpdulus (%)")
+    print("\033[34m[5]\033[0m Modulus (%)")
     print("\033[34m[6]\033[0m Power (^)")
     print("\033[34m[7]\033[0m Square Root (√)")
     print("\033[34m[8]\033[0m Exit (X)")
