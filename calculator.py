@@ -21,21 +21,21 @@ while True:
             second_number = float(input("\nEnter Second Number: "))
             print("-" * 50)
             print(
-                f"\033[32mResult:\033[0m{first_number:2g} + {second_number:2g} = {first_number+second_number:2g}"
+                f"\033[32mResult:\033[0m{first_number:2g} + {second_number:2g} = \033[32m{first_number+second_number:2g}\033[0m"
             )
         elif user_choice == 2:
             first_number = float(input("\nEnter First Number: "))
             second_number = float(input("\nEnter Second Number: "))
             print("-" * 50)
             print(
-                f"\033[32mResult:\033[0m{first_number:2g} - {second_number:2g} = {first_number-second_number:2g}"
+                f"\033[32mResult:\033[0m{first_number:2g} - {second_number:2g} = \033[32m{first_number-second_number:2g}\033[0m"
             )
         elif user_choice == 3:
             first_number = float(input("\nEnter First Number: "))
             second_number = float(input("\nEnter Second Number: "))
             print("-" * 50)
             print(
-                f"\033[32mResult:\033[0m{first_number:2g} x {second_number:2g} = {first_number*second_number:2g}"
+                f"\033[32mResult:\033[0m{first_number:2g} x {second_number:2g} = \033[32m{first_number*second_number:2g}\033[0m"
             )
         elif user_choice == 4:
             first_number = float(input("\nEnter First Number: "))
@@ -45,7 +45,7 @@ while True:
                 print("\033[33mThis number is not divisible by zero\033[0m")
             else:
                 print(
-                    f"\033[32mResult:\033[0m{first_number:2g} / {second_number:2g} = {first_number/second_number:2g}"
+                    f"\033[32mResult:\033[0m{first_number:2g} / {second_number:2g} = \033[32m{first_number/second_number:2g}\033[0m"
                 )
         elif user_choice == 5:
             first_number = float(input("\nEnter First Number: "))
@@ -55,14 +55,14 @@ while True:
                 print("\033[33mThis number is not modulus by zero\033[0m")
             else:
                 print(
-                    f"\033[32mResult:\033[0m{first_number:2g} % {second_number:2g} = {first_number%second_number:2g}"
+                    f"\033[32mResult:\033[0m{first_number:2g} % {second_number:2g} = \033[32m{first_number%second_number:2g}\033[0m"
                 )
         elif user_choice == 6:
             first_number = float(input("\nEnter First Number: "))
             second_number = float(input("\nEnter Second Number: "))
             print("-" * 50)
             print(
-                f"\033[32mResult:\033[0m{first_number:2g} ^ {second_number:2g} = {first_number**second_number:2g}"
+                f"\033[32mResult:\033[0m{first_number:2g} ^ {second_number:2g} = \033[32m{first_number**second_number:2g}\033[0m"
             )
         elif user_choice == 7:
             first_number = float(input("\nEnter First Number: "))
@@ -73,7 +73,9 @@ while True:
                 )
             else:
                 result = math.sqrt(first_number)
-                print(f"\033[32mResult:\033[0m √{first_number:2g} = {result:2g}")
+                print(
+                    f"\033[32mResult:\033[0m √{first_number:2g} = \033[32m{result:2g}\033[0m"
+                )
         elif user_choice == 8:
             print("\033[32mThankyou for using simple calculator. Goodbye!\033[0m")
             break
@@ -88,4 +90,3 @@ while True:
     except KeyboardInterrupt:
         print("\n")
         break
-###
